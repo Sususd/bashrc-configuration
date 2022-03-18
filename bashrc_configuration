@@ -1,0 +1,84 @@
+#
+# ~/.bashrc
+#
+
+#user line
+PS1="\e[35m________\e[36m\h\e[35m_____\n\e[36m\u\e[34m===>\e[35m[\w]\e[34m===>\n  "
+
+#conditions
+if alias lls="ls|lolcat" > /dev/null 2>&1; then
+        clear
+fi
+
+echo -e "|||||||||||||||||||||||||||||||\n==>Terminal has been starteD<==\n|||||||||||||||||||||||||||||||"|lolcat
+
+#functions
+
+{
+printf '[==>]'|lolcat -a -s 10000
+sleep 0.01
+printf '\r[===>]'|lolcat -a -s 10000
+sleep 0.01
+printf '\r[====>]'
+sleep 0.01
+printf '\r[=====>]'
+sleep 0.01
+printf '\r[======>]'
+sleep 0.01
+printf '\r[==========>]'
+sleep 0.01
+printf '\r[===========>]'
+sleep 0.01
+printf '\r[================>]'
+sleep 0.01
+printf '\r[=================>]'
+sleep 0.01
+printf '\r[==================>]'
+sleep 0.01
+printf '\r[=====================]       [DONE]'|lolcat -a -s 10000
+echo -e "\n"
+}
+
+{
+printf '[===>]'|lolcat -a -s 10000
+sleep 0.01
+printf '\r[=====>]'|lolcat -a -s 10000
+sleep 0.01
+printf '\r[======>]'
+sleep 0.01
+printf '\r[========>]'
+sleep 0.01
+printf '\r[===========>]'
+sleep 0.01
+printf '\r[=============>]'
+sleep 0.01
+printf '\r[===============>]'
+sleep 0.01
+printf '\r[==================>]'
+sleep 0.01
+printf '\r[=====================>]'
+sleep 0.01
+printf '\r[=======================>]'
+sleep 0.01
+printf '\r[=========================]   [DONE]'|lolcat -a -s 10000
+echo -e "\n"
+}
+
+
+cfetch(){
+        if neofetch; then
+                weit 2|clear
+        fi
+        if clear; then
+                date|lolcat
+                echo -e "==========================="
+                cal|lolcat
+                echo -e "==========================="
+
+        fi
+}
+
+#bash utils
+cfetch|lolcat
+
+
